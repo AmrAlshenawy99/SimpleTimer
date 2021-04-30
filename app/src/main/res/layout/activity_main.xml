@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="4"
+        android:orientation="vertical"
+
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:layout_weight="2.2"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/circle"
+        android:layout_margin="10dp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+
+
+        >
+
+
+        <TextView
+            android:id="@+id/timerTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0:00"
+            android:textColor="#FFC107"
+            android:textSize="65dp"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/timerSb"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+
+            android:layout_weight="0.6" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.7"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="3"
+
+    >
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/btnstart"
+        android:gravity="center"
+        android:text="start"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:onClick="startTimer"
+
+
+        />
+
+
+</LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
